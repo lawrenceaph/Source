@@ -1,0 +1,29 @@
+
+
+
+.customHeader{
+    width: 100vw;
+    background-color:#00000066;
+    max-height:55vh;
+    position:relative;
+}
+
+.customHeader img {
+    object-fit:cover;
+    object-position:top;
+    max-height:55vh;
+    width:100%;
+    z-index:0;
+}
+
+.custom-header-overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0, 0, 0, 0.298);
+    color:aliceblue;
+    display:flex;
+    flex-direction:column;
+}

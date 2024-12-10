@@ -1,6 +1,27 @@
 {{!< default}}
 {{!-- The tag above means: insert everything in this file into the body of the default.hbs template --}}
 
+
+
+<div class="customHeader">
+<div class="custom-header-overlay">
+{{#if @custom.header_custom_text}}
+ 
+
+<div class="w-[100vw] flex justify-center h-full items-center">
+    <span class="bg-black/70 p-2 rounded-lg px-[1rem] lg:text-[3rem] font-bold txt-[2rem]">
+    {{@custom.header_custom_text}}
+    </span>
+</div>
+
+{{/if}}
+</div>
+{{#if @custom.header_custom_image}}
+    <img src="{{@custom.header_custom_image}}" alt="Custom header image">
+{{/if}}
+
+</div>
+
 {{> "components/header" headerStyle=@custom.header_style}}
 
 {{#match @custom.header_style "!=" "Highlight"}}

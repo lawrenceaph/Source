@@ -16,7 +16,7 @@
 
     {{!-- Theme assets - use the {{asset}} helper to reference styles & scripts, this will take care of caching and cache-busting automatically --}}
     <link rel="stylesheet" type="text/css" href="{{asset "built/screen.css"}}">
-
+    <link rel="stylesheet" type="text/css" href="{{asset "built/new.css"}}">
     {{!-- Custom background color --}}
     <style>
         :root {
@@ -47,7 +47,7 @@
     {{ghost_head}}
 
 </head>
-<body class="{{body_class}} has-{{#match @custom.title_font "Elegant serif"}}serif{{else match @custom.title_font "Consistent mono"}}mono{{else}}sans{{/match}}-title has-{{#match @custom.body_font "Elegant serif"}}serif{{else}}sans{{/match}}-body">
+<body class="{{body_class}} ">
 
 <div class="gh-viewport">
     
@@ -65,7 +65,7 @@
 
 {{!-- Scripts - handle responsive videos, infinite scroll, and navigation dropdowns --}}
 <script src="{{asset "built/source.js"}}"></script>
-
+<script src="{{asset "built/uno.js"}}"></script>
 {{!-- Ghost outputs required functional scripts with this tag, it should always be the last thing before the closing body tag --}}
 {{ghost_foot}}
 
